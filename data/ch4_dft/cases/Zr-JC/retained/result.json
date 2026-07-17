@@ -1,0 +1,30 @@
+{
+  "case_id": "Zr-JC",
+  "endpoint_role": "retained",
+  "protocol_class": "M1_600Ry_nonperiodic",
+  "total_energy_hartree": -1410.9141940790357,
+  "energy_difference_ev": 2.946157,
+  "converged": true,
+  "normal_termination": true,
+  "charge": 0,
+  "multiplicity": 1,
+  "cutoff_ry": 600,
+  "rel_cutoff_ry": 50,
+  "ngrids": 5,
+  "periodicity": "NONE",
+  "cell_angstrom": "30 x 30 x 40",
+  "dispersion_geometry": "DFTD3 zero damping with C9 enabled",
+  "dispersion_final_energy": "PBE-D3(BJ) with C9 disabled",
+  "source_sha256": {
+    "accepted_input": "f5bcaa6c1c5f8fa7434a8543640f549a1a80cc42067a4bbd942c7c822e7d4e8e",
+    "accepted_coordinate": "43a25533bb869e78e9eda9ef007b148061db41a40ee56a43acbfc6b6a5089f59",
+    "unpublished_full_output": "813d4e3a94fcdada9c6888620f88ab20ac7a96f6e07dc4326154855baf5b75c4"
+  },
+  "public_file_sha256": {
+    "final_energy_input.inp": "c3150bc5570a79d94781a730101a0d648dc9385ab359c7856095e359aa49f5d1",
+    "endpoint.xyz": "b79d29382176f56a9c0adcdf1b2e0ad6fe51ef10534ca6834b144c01a729eec0",
+    "final_energy_output_excerpt.txt": "ab85a08b095375da79ec2d7b81b585eb876a794d2e93d269807d51d04ec48e87"
+  },
+  "dissertation_mapping": "Chapter 4, Figure 4.4",
+  "comparison_scope": "primary selected junction-contact endpoint"
+}

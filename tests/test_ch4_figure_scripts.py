@@ -63,7 +63,7 @@ def test_figure_4_6_renders_in_requested_temporary_directory(tmp_path: Path) -> 
         assert output.stat().st_size > 0
 
 
-def test_public_ch4_csvs_contain_only_plot_level_fields() -> None:
+def test_public_ch4_figure_csvs_contain_only_plot_level_fields() -> None:
     allowed_fields = {
         "oxide_family",
         "endpoint_label",
@@ -78,7 +78,10 @@ def test_public_ch4_csvs_contain_only_plot_level_fields() -> None:
         "displaced_energy",
     )
 
-    for csv_path in DATA_DIR.glob("*.csv"):
+    for csv_path in (
+        DATA_DIR / "figure4_4_constrained_separation.csv",
+        DATA_DIR / "figure4_6_extension.csv",
+    ):
         with csv_path.open(newline="", encoding="utf-8") as handle:
             reader = csv.DictReader(handle)
             assert reader.fieldnames is not None

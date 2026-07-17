@@ -1,0 +1,15 @@
+{
+  "case_id": "Zr-JC",
+  "protocol_id": "M1_600Ry_nonperiodic",
+  "geometry_lineage": "Both endpoint geometries derive from Pt6-fixed support relaxation; final energies are fixed-geometry single points.",
+  "comparison_scope": "primary selected junction-contact endpoint",
+  "charge": 0,
+  "multiplicity": 1,
+  "cutoff_ry": 600,
+  "rel_cutoff_ry": 50,
+  "ngrids": 5,
+  "periodicity": "NONE",
+  "cell_angstrom": "30 x 30 x 40",
+  "dispersion_geometry": "DFTD3 zero damping with C9 enabled",
+  "dispersion_final_energy": "PBE-D3(BJ) with C9 disabled"
+}

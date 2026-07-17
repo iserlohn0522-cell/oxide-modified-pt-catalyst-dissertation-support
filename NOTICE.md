@@ -1,17 +1,11 @@
 # License Scope and Research-Material Notice
 
-The MIT License in `LICENSE` applies to the author's original material in these locations:
+Copyright 2026 Gan Xu.
 
-- `src/`
-- `scripts/`
-- `tests/`
-- `configs/`
-- `docs/`
-- `manifests/`
-- `.github/`
-- `pyproject.toml`
-- the repository-operational files at the repository root
+The author's original software, tests, configurations, documentation, and released model checkpoints are licensed under AGPL-3.0-or-later. The full license text is provided in `LICENSE` and `LICENSES/AGPL-3.0.txt`.
 
-The MIT License does not apply to scientific values or provenance records in `data/`, to the dissertation text or figures, to raw or processed research data, to trained weights, or to third-party material. No such broader reuse permission is granted by this repository.
+The author's curated numerical DFT tables and coordinate files in `data/ch4_dft/` are licensed under CC BY 4.0, subject to attribution through the repository release and dissertation. See `DATA_LICENSE.md` and `LICENSES/CC-BY-4.0.txt`.
 
-The small Chapter 4 tables are supplied to identify the values used by the included plotting scripts and to connect those scripts to the final dissertation. They should be cited through the dissertation and repository release. No original microscopy images, literature panels, publisher PDFs, or permission-controlled figures are distributed here.
+These licenses do not cover third-party software or model material, the dissertation text or figures, publisher material, raw or processed microscopy data, electrochemical data, private annotations, or any other material not actually included in the release. Third-party dependencies remain governed by their providers' terms.
+
+The public package intentionally excludes dissertation Word/PDF files, internal logs, private paths, image identities, frozen data-split membership, production microscopy images, annotations, masks, and per-particle tables.

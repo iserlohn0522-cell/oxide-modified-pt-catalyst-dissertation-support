@@ -1,0 +1,11 @@
+artifact_group,include_status,public_location,scientific_reason,exclusion_boundary,license_class
+chapter5_code,include,src/pt_tem_cv and scripts/ch5_ml_tem,inspect reusable computer-vision methods,no private paths or data identities,AGPL-3.0-or-later
+chapter5_configs,include,configs/ch5_ml_tem,record production-facing parameters,no private dataset paths or split identities,AGPL-3.0-or-later
+chapter5_aggregate_results,include,data/ch5_ml_tem/aggregate_results.csv,report final aggregate evidence,no per-image or per-particle rows,CC-BY-4.0
+custom_weights,release_asset,models/MODEL_REGISTRY.yaml,enable inference with accepted custom models,no raw checkpoints or training histories,AGPL-3.0-or-later
+third_party_weights,exclude,models/third_party_models.md,provider link and terms only,no SAM 3 or base YOLO checkpoint,third-party terms
+chapter4_cases,include,data/ch4_dft/cases,inspect selected accepted endpoint calculations,no full outputs scheduler records or failed trials,CC-BY-4.0
+chapter4_tables,include,data/ch4_dft,allow numerical reconstruction,no internal route names or job identifiers,CC-BY-4.0
+microscopy_archive,exclude,DATA_AVAILABILITY.md,not necessary for code inspection,no source images identities annotations masks or split membership,not distributed
+dissertation_and_reviews,exclude,DATA_AVAILABILITY.md,outside repository scope,no Word PDF committee review or permission files,not distributed
+internal_logs_and_memory,exclude,DATA_AVAILABILITY.md,outside scientific public surface,no logs handoffs project memory or cluster history,not distributed

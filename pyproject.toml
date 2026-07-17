@@ -1,5 +1,5 @@
 [build-system]
-requires = ["setuptools>=68", "wheel"]
+requires = ["setuptools>=77", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -8,7 +8,7 @@ version = "1.0.0"
 description = "Sliding-window TEM object-detection utilities accompanying Chapter 5 of a dissertation"
 readme = "README.md"
 authors = [{name = "Gan Xu"}]
-license = {file = "LICENSE"}
+license = "AGPL-3.0-or-later"
 requires-python = ">=3.10"
 dependencies = [
   "matplotlib>=3.7",
@@ -16,9 +16,16 @@ dependencies = [
   "Pillow>=9.5",
   "PyYAML>=6.0",
 ]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+]
 
 [project.optional-dependencies]
-ml = ["ultralytics>=8.3"]
+ml = ["ultralytics==8.4.9"]
+substrate = ["torch>=2.2", "segmentation-models-pytorch==0.5.0"]
 dev = ["pytest>=8"]
 
 [project.urls]

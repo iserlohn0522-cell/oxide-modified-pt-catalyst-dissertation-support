@@ -2,7 +2,7 @@ oxide_family,endpoint_label,delta_e_sep_2A_eV,method_family,evidence_role,note
 TaOx,TaOx*,7.670335,PBE-D3 final GEO_OPT under a different relaxation protocol,qualitative extension,Different relaxation protocol; shown as a qualitative extension.
 ZrOx,Zr-JC*,1.360508,"fixed-geometry PBE-D3(BJ), C9 off",benchmark lower endpoint,Second lower-energy displaced basin.
 ZrOx,Zr-JC,2.946157,"fixed-geometry PBE-D3(BJ), C9 off",benchmark upper endpoint,Primary displaced basin.
-TiOx,TiOx,0.912724,"fixed-geometry PBE-D3(BJ), C9 off",positive extension,Selected Ti oxide-fragment pair.
+TiOx,TiOx,0.912724,"600/50 Ry, NGRIDS 5, nonperiodic fixed-geometry PBE-D3(BJ), C9 off",positive extension,Selected Ti oxide-fragment pair.
 NbOx,Nb-WP,0.903383,"fixed-geometry PBE-D3(BJ), C9 off",benchmark comparator,Selected Nb weak-contact comparator.
 CeOx,CeOx,,not evaluated quantitatively,not evaluated,Requires an explicit DFT+U and charge-state protocol.
-WOx,WOx,-1.884174,"fixed-geometry PBE-D3(BJ), C9 off",negative extension boundary,Selected neighboring-carbon pair.
+WOx,WOx,-1.884174,"600/50 Ry, NGRIDS 5, periodic fixed-geometry PBE-D3(BJ), C9 off",negative extension boundary,Selected neighboring-carbon pair after periodic-boundary repair.

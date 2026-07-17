@@ -1,0 +1,15 @@
+{
+  "case_id": "Nb-JC",
+  "protocol_id": "M2_400Ry_periodic",
+  "geometry_lineage": "The retained geometry came from an earlier closed-shell unconstrained optimization; its reported energy is a later LSD fixed-geometry single point. Only the displaced-endpoint optimization fixed the six Pt atoms.",
+  "comparison_scope": "lineage-consistent recontact control compared only within the M2 control protocol",
+  "charge": 0,
+  "multiplicity": 1,
+  "cutoff_ry": 400,
+  "rel_cutoff_ry": 50,
+  "ngrids": 4,
+  "periodicity": "XYZ",
+  "cell_angstrom": "A=(17.216585,0,0); B=(8.608293,14.910000,0); C=(0,0,20.000000)",
+  "dispersion_geometry": "PBE-D3(BJ) with C9 disabled for displaced controls; retained source optimization was earlier and method-distinct",
+  "dispersion_final_energy": "PBE-D3(BJ) with C9 disabled"
+}

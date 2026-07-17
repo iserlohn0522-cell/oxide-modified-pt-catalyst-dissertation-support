@@ -1,0 +1,9 @@
+pair_id,retained_endpoint,displaced_endpoint,delta_e_displaced_minus_retained_eV,protocol_id,evidence_role
+Zr-JC,zr_retained,zr_displaced_primary,2.946157,M1_600Ry_nonperiodic,primary selected endpoint
+Zr-JC*,zr_retained,zr_displaced_alternate,1.360508,M1_600Ry_nonperiodic,alternate displaced-basin sensitivity
+Nb-WP,nb_retained,nb_displaced,0.903383,M1_600Ry_nonperiodic,weak-contact comparator
+Zr-OS,zr_os_retained,zr_os_displaced,2.112990,M2_400Ry_periodic,lineage-consistent control
+Nb-JC,nb_jc_retained,nb_jc_displaced,0.096665,M2_400Ry_periodic,lineage-consistent recontact control
+TiOx,ti_retained,ti_displaced,0.912724,M1_600Ry_nonperiodic,oxide-fragment extension
+WOx,w_retained_periodic,w_displaced_periodic,-1.884174,M3_600Ry_periodic,periodic oxide-fragment extension
+TaOx*,,,7.670335,M4_method_distinct,qualitative extension from a different relaxation protocol

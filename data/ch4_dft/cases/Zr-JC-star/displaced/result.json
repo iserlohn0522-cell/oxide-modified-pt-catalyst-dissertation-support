@@ -1,0 +1,30 @@
+{
+  "case_id": "Zr-JC-star",
+  "endpoint_role": "displaced",
+  "protocol_class": "M1_600Ry_nonperiodic",
+  "total_energy_hartree": -1410.864196321796,
+  "energy_difference_ev": 1.360508,
+  "converged": true,
+  "normal_termination": true,
+  "charge": 0,
+  "multiplicity": 1,
+  "cutoff_ry": 600,
+  "rel_cutoff_ry": 50,
+  "ngrids": 5,
+  "periodicity": "NONE",
+  "cell_angstrom": "30 x 30 x 40",
+  "dispersion_geometry": "DFTD3 zero damping with C9 enabled",
+  "dispersion_final_energy": "PBE-D3(BJ) with C9 disabled",
+  "source_sha256": {
+    "accepted_input": "7e58dd8b9c4eb6b47930a3244c9448c3b1880122cb1c698b2df6d8cd455f9c35",
+    "accepted_coordinate": "2077708cf35ec84fb19d945d7988eb80657f41d5e76c2c212549a5b0de771da7",
+    "unpublished_full_output": "755d79943ddca9f9b8d3ef21b1692fe61505d5f4294907440d704850c5fdc8a8"
+  },
+  "public_file_sha256": {
+    "final_energy_input.inp": "4258e2f11fe4691a92a202c192d8476363db4a1a5d9cd4db1123dfd69da69f3d",
+    "endpoint.xyz": "d70f7766f1f37c717a7c9e22ff668dc7abbc04722fb24026d8f13b9c0e1e1265",
+    "final_energy_output_excerpt.txt": "d07deea7db26f6b81a63c62e80be60a5e1870ef12067af17f62fd5c6e071583d"
+  },
+  "dissertation_mapping": "Chapter 4, Figure 4.4",
+  "comparison_scope": "alternate displaced support basin from the same retained endpoint and displacement"
+}

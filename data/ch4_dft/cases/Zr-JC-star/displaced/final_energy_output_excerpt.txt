@@ -1,0 +1,28 @@
+# Declared CP2K evidence excerpt
+# Generated from the unpublished accepted input/output pair by extract_cp2k_output_excerpt.py.
+# This is not a complete CP2K output or scheduler log.
+
+[selected input settings]
+RUN_TYPE ENERGY
+CHARGE 0
+LSD
+MULTIPLICITY 1
+CUTOFF 600
+REL_CUTOFF 50
+NGRIDS 5
+TYPE DFTD3(BJ)
+CALCULATE_C9_TERM .FALSE.
+PERIODIC NONE
+PSOLVER MT
+PERIODIC NONE
+
+[selected output evidence]
+CP2K| version string:                                       CP2K version 2023.1
+GLOBAL| Run type                                                         ENERGY
+CELL| Periodicity                                                          NONE
+PW_GRID| Cutoff [a.u.]                                                    600.0
+POISSON| Solver                                          Martyna-Tuckerman (MT)
+POISSON| Periodicity                                                       NONE
+*** SCF run converged in    37 steps ***
+ENERGY| Total FORCE_EVAL ( QS ) energy [a.u.]:            -1410.864196321796044
+**** **** ******  **  PROGRAM ENDED AT                 2026-06-10 01:29:40.622

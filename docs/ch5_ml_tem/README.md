@@ -1,43 +1,42 @@
-# Chapter 5 Detector-Side Workflow
+# Chapter 5 TEM Computer-Vision Workflow
 
-The released Chapter 5 code covers the detector-side portion of the TEM particle workflow: source-image records, overlapping-window dataset construction, rotation and controlled train-time transformations, detector screening and training, and source-image-level box evaluation.
+The released workflow separates five functions: particle detector training/evaluation, detector-box-prompted mask refinement, substrate segmentation, scale verification, and projected two-dimensional morphometry. Private images and identities are not required to inspect the interfaces.
 
-## User-supplied inputs
+## Particle dataset and detector
 
-The repository includes schema templates, not dissertation image identities.
+`manifests/ch5_ml_tem/source_manifest.template.csv` maps a public-safe `image_id` to a user-supplied image and LabelMe record. `split_manifest.template.yaml` assigns source images to user-selected partitions. Dataset windows that overlap an `ignore_region` are excluded by default. Particle boxes must be fully contained in an accepted window.
 
-- `manifests/ch5_ml_tem/source_manifest.template.csv` maps an `image_id` to an image and editable LabelMe JSON record.
-- `manifests/ch5_ml_tem/split_manifest.template.yaml` defines user-selected train, validation, and test membership by source image.
-- `configs/ch5_ml_tem/dataset_template.yaml` defines window size, stride, rotations, labels, and ignore-region handling.
+`build_detector_dataset.py` creates overlapping windows and records their source coordinates and rotations. These windows increase training exposure but are not independent scientific observations. `evaluate_source_images.py` returns rotation-zero predictions to source coordinates, applies non-maximum suppression, and performs one-to-one reference matching before reporting pooled and per-image metrics.
 
-The expected particle label is `Pt_NPs`. Regions labeled `ignore_region` are excluded by default: dataset windows overlapping an ignore region are not materialized, and source-image evaluation excludes ground-truth and predicted boxes whose centers fall inside such a region. The summary records the number of excluded regions, references, and predictions.
+The production configuration is `configs/ch5_ml_tem/production_particle_model.yaml`. The matching sanitized checkpoint is a separate versioned release asset described in `models/particle_detector_model_card.md`.
 
-## Build a sliding-window dataset
+`run_particle_inference.py` applies that detector to a directory of prepared windows and writes the JSON-lines format consumed by `evaluate_source_images.py`. Its default confidence is 0.25, matching the production configuration.
+
+## Detector-box-prompted masks
+
+In the dissertation workflow, detector boxes in source-image coordinates were supplied to SAM 3 through the Ultralytics interface to obtain particle masks. This repository documents that interface but does not redistribute Meta's provider checkpoint, the dissertation masks, or per-particle outputs. The reference-box versus detector-box aggregate mask-IoU comparison is included in `data/ch5_ml_tem/aggregate_results.csv`.
+
+## Substrate consensus
+
+The support footprint was segmented by three U-Net/ResNet-34 models. Each RGB image is resized to 768 × 768 by bilinear interpolation, divided by 255, passed through the model and sigmoid, thresholded at 0.3, 0.7, or 0.5 for the three respective seeds, restored to source dimensions by nearest-neighbor interpolation, and combined by a two-of-three vote.
+
+The exact public configuration is `configs/ch5_ml_tem/production_substrate_consensus.yaml`. The three sanitized state dictionaries are separate release assets. Example command:
 
 ```text
-python scripts/ch5_ml_tem/build_detector_dataset.py \
-  --config configs/ch5_ml_tem/dataset_template.yaml \
-  --source-manifest path/to/source_manifest.csv \
-  --split-manifest path/to/split_manifest.yaml \
-  --output-root path/to/output
+python scripts/ch5_ml_tem/run_substrate_consensus.py \
+  --image path/to/image.png \
+  --weights seed20260623.pt seed20260624.pt seed20260625.pt \
+  --output path/to/substrate_mask.png
 ```
 
-Boxes are included only when the complete box lies within a window. Tile and rotation identifiers are recorded in `patch_manifest.csv`; these computational records do not represent additional TEM fields.
+## Scale verification
 
-## Train or inspect screens
+The workflow associated a detected scale-bar geometry with its text value and unit, followed by human checking. A record is eligible for physical-unit conversion only when `verification_status` is `accepted` or `verified`. The public schema is `configs/ch5_ml_tem/scale_verification_schema.yaml`; `pt_tem_cv.scale.calibrated_nm_per_pixel` enforces it.
 
-After installing the `ml` optional dependencies, one detector can be trained with `scripts/ch5_ml_tem/train_detector.py`. The family, augmentation, and factorial-screen scripts accept `--list-only` so their planned runs can be inspected without training.
+## Projected morphometry
 
-The configuration files preserve the tested model/augmentation structures without publishing the dissertation's images, split identities, checkpoints, or results.
+`pt_tem_cv.morphometry` calculates Euclidean closed-contour perimeter, projected area, equivalent-circle diameter, and circularity `4πA/P²` after applying the verified image scale. Circularity is clipped to [0, 1] for paper-facing output. These are descriptors of a three-dimensional particle's two-dimensional TEM projection.
 
-## Source-image evaluation
+## Public results and limits
 
-`scripts/ch5_ml_tem/evaluate_source_images.py` expects one JSON object per patch line. Each line contains a `patch_name` and local `xyxy` predictions with confidence scores, for example:
-
-```json
-{"patch_name":"sample_001__r000__x00000_y00000","predictions":[{"box":[20,30,45,55],"score":0.87}]}
-```
-
-Rotation-zero window predictions are translated back to source-image coordinates, merged by non-maximum suppression, and matched one-to-one to the reference boxes at the requested IoU threshold. The output contains pooled and per-image precision, recall, F1, and count-error summaries.
-
-The dissertation's subsequent mask-refinement step used detector boxes as prompts to SAM 3 through the Ultralytics interface. Production images, masks, and model weights are outside this public package.
+`data/ch5_ml_tem/aggregate_results.csv` contains aggregate values reported in the dissertation, including the 11-image route-selection result and the 215-image deployment count. It contains no source-image identifiers, split membership, masks, or particle-level rows. The synthetic example under `examples/synthetic_tem/` validates software interfaces only and must not be read as a performance evaluation.

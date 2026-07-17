@@ -1,0 +1,5 @@
+protocol_id,run_type,functional,dispersion,c9,cutoff_Ry,rel_cutoff_Ry,ngrids,periodicity,cell,poisson,eps_scf,scope
+M1_600Ry_nonperiodic,ENERGY,PBE,D3(BJ),off,600,50,5,NONE,30 x 30 x 40 angstrom,MT nonperiodic,1e-4,"Zr-JC; Zr-JC*; Nb-WP; TiOx"
+M2_400Ry_periodic,ENERGY,PBE,D3(BJ),off,400,50,4,XYZ,"A=(17.216585 0 0); B=(8.608293 14.910000 0); C=(0 0 20.000000) angstrom",periodic default,1e-6,"Zr-OS; Nb-JC controls"
+M3_600Ry_periodic,ENERGY,PBE,D3(BJ),off,600,50,5,XYZ,source periodic W cell,periodic default,1e-4,WOx periodic repair
+M4_method_distinct,GEO_OPT,PBE,D3,not harmonized,,,,,method-distinct source model,,,TaOx qualitative extension

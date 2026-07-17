@@ -1,0 +1,15 @@
+pair_id,endpoint_id,endpoint_role,energy_Ha,protocol_id,scf_converged,source_scope
+Zr-JC,zr_retained,retained,-1410.914194079035724,M1_600Ry_nonperiodic,yes,Figure 4.4 primary pair
+Zr-JC,zr_displaced_primary,displaced,-1410.805924808454165,M1_600Ry_nonperiodic,yes,Figure 4.4 primary displaced basin
+Zr-JC*,zr_retained,retained,-1410.914194079035724,M1_600Ry_nonperiodic,yes,Figure 4.4 shared retained endpoint
+Zr-JC*,zr_displaced_alternate,displaced,-1410.864196321796044,M1_600Ry_nonperiodic,yes,Figure 4.4 alternate displaced basin
+Nb-WP,nb_retained,retained,-1446.350873435968424,M1_600Ry_nonperiodic,yes,Figure 4.4 weak-contact comparator
+Nb-WP,nb_displaced,displaced,-1446.317674724062954,M1_600Ry_nonperiodic,yes,Figure 4.4 weak-contact comparator
+Zr-OS,zr_os_retained,retained,-1413.570603222498676,M2_400Ry_periodic,yes,matched control
+Zr-OS,zr_os_displaced,displaced,-1413.492952275860262,M2_400Ry_periodic,yes,matched control
+Nb-JC,nb_jc_retained,retained,-1449.808889677046182,M2_400Ry_periodic,yes,matched control
+Nb-JC,nb_jc_displaced,displaced,-1449.805337296982543,M2_400Ry_periodic,yes,matched control
+TiOx,ti_retained,retained,-1433.053271711162779,M1_600Ry_nonperiodic,yes,Figure 4.6 extension
+TiOx,ti_displaced,displaced,-1433.019729733822487,M1_600Ry_nonperiodic,yes,Figure 4.6 extension
+WOx,w_retained_periodic,retained,-1471.982480151518757,M3_600Ry_periodic,yes,Figure 4.6 periodic repair
+WOx,w_displaced_periodic,displaced,-1472.051722253836715,M3_600Ry_periodic,yes,Figure 4.6 periodic repair

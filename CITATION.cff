@@ -8,7 +8,8 @@ authors:
     given-names: "Gan"
 repository-code: "https://github.com/iserlohn0522-cell/oxide-modified-pt-catalyst-dissertation-support"
 url: "https://github.com/iserlohn0522-cell/oxide-modified-pt-catalyst-dissertation-support"
-abstract: "Lightweight support package for Chapter 5 detector training and evaluation code and selected Chapter 4 DFT plotting and provenance files accompanying a 2026 University of Missouri-Columbia doctoral dissertation. Raw microscopy, annotations, model weights, complete calculation archives, and dissertation submission files are not included."
+abstract: "Support package for Chapter 5 TEM computer-vision methods, sanitized custom model release assets, and curated Chapter 4 DFT endpoint calculations accompanying a 2026 University of Missouri-Columbia doctoral dissertation. Raw microscopy, private annotations, complete calculation archives, and dissertation submission files are not included."
+license: AGPL-3.0-or-later
 keywords:
   - PEMFC
   - platinum catalyst

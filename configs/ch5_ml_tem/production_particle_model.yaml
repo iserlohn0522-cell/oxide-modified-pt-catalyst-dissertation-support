@@ -1,0 +1,30 @@
+release_model_id: particle_detector_yolov8m_seg_dissertation_v1
+task: instance_segmentation
+architecture: yolov8m-seg
+input_size_px: 512
+epochs: 100
+batch: 4
+seed: 0
+optimizer: auto
+deterministic: true
+training_augmentations:
+  hsv_h: 0.0
+  hsv_s: 0.0
+  hsv_v: 0.0
+  degrees: 0.0
+  translate: 0.1
+  scale: 0.1
+  fliplr: 0.0
+  flipud: 0.0
+  mosaic: 0.0
+  mixup: 0.0
+  copy_paste: 0.0
+  erasing: 0.0
+evaluation:
+  detector_confidence: 0.25
+  source_image_unit: true
+  tile_predictions_returned_to_source_coordinates: true
+  duplicate_suppression: non_maximum_suppression
+notes:
+  - Dataset paths and frozen image membership are intentionally excluded from the public repository.
+  - The release checkpoint is supplied separately from Git and is governed by the repository software license.

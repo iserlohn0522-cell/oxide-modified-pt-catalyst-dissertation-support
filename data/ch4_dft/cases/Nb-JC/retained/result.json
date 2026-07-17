@@ -1,0 +1,30 @@
+{
+  "case_id": "Nb-JC",
+  "endpoint_role": "retained",
+  "protocol_class": "M2_400Ry_periodic",
+  "total_energy_hartree": -1449.8088896770462,
+  "energy_difference_ev": 0.096665,
+  "converged": true,
+  "normal_termination": true,
+  "charge": 0,
+  "multiplicity": 1,
+  "cutoff_ry": 400,
+  "rel_cutoff_ry": 50,
+  "ngrids": 4,
+  "periodicity": "XYZ",
+  "cell_angstrom": "A=(17.216585,0,0); B=(8.608293,14.910000,0); C=(0,0,20.000000)",
+  "dispersion_geometry": "PBE-D3(BJ) with C9 disabled for displaced controls; retained source optimization was earlier and method-distinct",
+  "dispersion_final_energy": "PBE-D3(BJ) with C9 disabled",
+  "source_sha256": {
+    "accepted_input": "d3135c1f5195287aed7d276231eb1188f81593c7b1de1ef81b269105b163d4f9",
+    "accepted_coordinate": "c21ae68b9995c59e8b25382ab89392ca6416ed69500ca01c122c36efe0078ed1",
+    "unpublished_full_output": "71a4b1c50993274a99302edb7eff00c1fe864212ca27754d135b87a25a06eaa4"
+  },
+  "public_file_sha256": {
+    "final_energy_input.inp": "4b7461b7359ad0665d6563983b4379bfec3555312d95658ceaca7c845d25f982",
+    "endpoint.xyz": "7841326e29766e216e5f3555c5bf21f6489007d85d388a2e9c171cfceaaa36e1",
+    "final_energy_output_excerpt.txt": "96ef8853793ca4800fa0e331b705e5dccd5743c099885132852075d48bc6ee0a"
+  },
+  "dissertation_mapping": "Chapter 4 matched-control analysis",
+  "comparison_scope": "lineage-consistent recontact control compared only within the M2 control protocol"
+}

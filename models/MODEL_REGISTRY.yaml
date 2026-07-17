@@ -1,0 +1,64 @@
+schema_version: 1
+release: v1.0.0
+files_are_distributed_as_release_assets_not_git_objects: true
+models:
+  - model_id: particle_detector_yolov8m_seg_dissertation_v1
+    file: particle_detector_yolov8m_seg_dissertation_v1.pt
+    sha256: 2fd4df585a3a6fb73c2826b549cf3c86ef43bb039cca457ba8c51a62dc600403
+    bytes: 54844599
+    format: ultralytics_checkpoint
+    task: instance_segmentation
+    architecture: yolov8m-seg
+    license: AGPL-3.0-or-later
+    model_card: particle_detector_model_card.md
+  - model_id: substrate_unet_resnet34_seed20260623_v1
+    file: substrate_unet_resnet34_seed20260623_v1.pt
+    sha256: 6de163685b8ca16c3c429fcff4d2f2f3ca59f7221e5c1f0412a780c7e3cda503
+    bytes: 97915987
+    format: pytorch_state_dict
+    task: binary_semantic_segmentation
+    architecture: smp-unet-resnet34
+    threshold: 0.3
+    license: AGPL-3.0-or-later
+    model_card: substrate_consensus_model_card.md
+  - model_id: substrate_unet_resnet34_seed20260624_v1
+    file: substrate_unet_resnet34_seed20260624_v1.pt
+    sha256: b8980d20ca4db4444fbdf7a158796f20792955d3019bde6819303112ad1585ae
+    bytes: 97915987
+    format: pytorch_state_dict
+    task: binary_semantic_segmentation
+    architecture: smp-unet-resnet34
+    threshold: 0.7
+    license: AGPL-3.0-or-later
+    model_card: substrate_consensus_model_card.md
+  - model_id: substrate_unet_resnet34_seed20260625_v1
+    file: substrate_unet_resnet34_seed20260625_v1.pt
+    sha256: d70bc08f0e7f493d7ce9669ac980483e6822be93330f146f008407fd3072445e
+    bytes: 97915987
+    format: pytorch_state_dict
+    task: binary_semantic_segmentation
+    architecture: smp-unet-resnet34
+    threshold: 0.5
+    license: AGPL-3.0-or-later
+    model_card: substrate_consensus_model_card.md
+verification_environment:
+  python: 3.13.9
+  torch: 2.12.1+cpu
+  ultralytics: 8.4.9
+  segmentation_models_pytorch: 0.5.0
+equivalence_test:
+  state_tensors_exact: true
+  fixed_input_forward_max_absolute_difference: 0.0
+third_party_dependencies:
+  - provider: Ultralytics
+    component: YOLOv8m-seg architecture and base checkpoint route
+    license_string: AGPL-3.0 open-source route
+    terms_url: https://www.ultralytics.com/license
+    checked: 2026-07-17
+    redistributed: false
+  - provider: Meta
+    component: SAM 3 provider checkpoint
+    license_string: SAM License (custom)
+    terms_url: https://github.com/facebookresearch/sam3
+    checked: 2026-07-17
+    redistributed: false

@@ -1,0 +1,13 @@
+evaluation_scope,metric,value,unit,note
+route_selection,source_image_count,11,images,frozen original-image comparison set
+route_selection,reference_object_count,5752,objects,scale-checked reference objects
+route_selection,pooled_precision,0.851,fraction,selected detector-plus-prompted-mask route
+route_selection,pooled_recall,0.733,fraction,selected detector-plus-prompted-mask route
+route_selection,pooled_f1,0.788,fraction,selected detector-plus-prompted-mask route
+prompt_quality,median_mask_iou_reference_box,0.745,fraction,reference-box prompts
+prompt_quality,median_mask_iou_detector_box,0.647,fraction,detector-box prompts
+deployment,source_image_count,215,images,full dissertation TEM archive
+deployment,usable_particle_mask_count,148653,masks,after workflow quality controls
+contrast_screen,baseline_crossfold_map50,0.8379,fraction,baseline composite configuration
+contrast_screen,deterministic_contrast_crossfold_map50,0.8324,fraction,recorded comparison
+contrast_screen,stochastic_contrast_crossfold_map50,0.8287,fraction,recorded comparison

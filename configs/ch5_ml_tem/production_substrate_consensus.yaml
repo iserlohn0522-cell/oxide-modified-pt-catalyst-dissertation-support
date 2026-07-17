@@ -1,0 +1,29 @@
+release_model_id: substrate_consensus_s1_dissertation_v1
+task: binary_semantic_segmentation
+architecture:
+  library: segmentation_models_pytorch
+  model: Unet
+  encoder: resnet34
+  encoder_weights: null
+  in_channels: 3
+  classes: 1
+inference:
+  color_mode: RGB
+  resize_px: [768, 768]
+  resize_interpolation: bilinear
+  normalization: divide_by_255
+  output_activation: sigmoid
+  restore_interpolation: nearest
+consensus:
+  policy: majority_vote
+  required_votes: 2
+members:
+  - seed: 20260623
+    threshold: 0.3
+  - seed: 20260624
+    threshold: 0.7
+  - seed: 20260625
+    threshold: 0.5
+notes:
+  - Thresholds were selected on development data before deployment.
+  - The checkpoints are supplied separately as state dictionaries; source images and derived masks are not public.

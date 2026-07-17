@@ -1,0 +1,15 @@
+{
+  "case_id": "Zr-JC-star",
+  "protocol_id": "M1_600Ry_nonperiodic",
+  "geometry_lineage": "The retained endpoint is shared with Zr-JC; the displaced endpoint is an alternate Pt6-fixed support-relaxation basin.",
+  "comparison_scope": "alternate displaced support basin from the same retained endpoint and displacement",
+  "charge": 0,
+  "multiplicity": 1,
+  "cutoff_ry": 600,
+  "rel_cutoff_ry": 50,
+  "ngrids": 5,
+  "periodicity": "NONE",
+  "cell_angstrom": "30 x 30 x 40",
+  "dispersion_geometry": "DFTD3 zero damping with C9 enabled",
+  "dispersion_final_energy": "PBE-D3(BJ) with C9 disabled"
+}

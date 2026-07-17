@@ -1,0 +1,12 @@
+required_fields:
+  image_id: public-safe image identifier
+  scale_bar_length_px: measured scale-bar length in pixels
+  scale_bar_value: numeric value associated with the scale bar
+  scale_bar_unit: nm or um
+  verification_status: accepted or verified
+optional_fields:
+  reading_method: geometry_and_associated_text
+  reviewer_note: concise non-sensitive note
+policy:
+  automatic_reading_must_be_human_verified: true
+  physical_unit_conversion_requires_verified_status: true

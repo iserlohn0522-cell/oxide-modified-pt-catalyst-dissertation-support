@@ -1,0 +1,30 @@
+{
+  "case_id": "Zr-OS",
+  "endpoint_role": "displaced",
+  "protocol_class": "M2_400Ry_periodic",
+  "total_energy_hartree": -1413.4929522758603,
+  "energy_difference_ev": 2.11299,
+  "converged": true,
+  "normal_termination": true,
+  "charge": 0,
+  "multiplicity": 1,
+  "cutoff_ry": 400,
+  "rel_cutoff_ry": 50,
+  "ngrids": 4,
+  "periodicity": "XYZ",
+  "cell_angstrom": "A=(17.216585,0,0); B=(8.608293,14.910000,0); C=(0,0,20.000000)",
+  "dispersion_geometry": "PBE-D3(BJ) with C9 disabled for displaced controls; retained source optimization was earlier and method-distinct",
+  "dispersion_final_energy": "PBE-D3(BJ) with C9 disabled",
+  "source_sha256": {
+    "accepted_input": "15bbf26f709c11f61ddff0b22aa0b62a461d514200a2d7f4562f7142f0c71e75",
+    "accepted_coordinate": "6ea78dea2068d17ceaab7b20755e5de78867842d575d9765cbd4af6689a9b019",
+    "unpublished_full_output": "df1442060e3c695a75b5c4ebb582494f5ed93fb20d27de62cb6772292a47a771"
+  },
+  "public_file_sha256": {
+    "final_energy_input.inp": "17346e44daf3da80b6e2f5158a064e3a72eba16e6bec4ffcd229364894fa263c",
+    "endpoint.xyz": "8f5eca232f82fe43076791029144068da61300e657ebd6e2b98bea6c51f1c6f0",
+    "final_energy_output_excerpt.txt": "bc0264a1e2453f1df945866ef7250ca93ce934281a246f708c8a5b26026cab6c"
+  },
+  "dissertation_mapping": "Chapter 4 matched-control analysis",
+  "comparison_scope": "lineage-consistent control compared only within the M2 control protocol"
+}

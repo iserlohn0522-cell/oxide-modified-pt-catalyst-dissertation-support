@@ -1,0 +1,30 @@
+{
+  "case_id": "Nb-WP",
+  "endpoint_role": "retained",
+  "protocol_class": "M1_600Ry_nonperiodic",
+  "total_energy_hartree": -1446.3508734359684,
+  "energy_difference_ev": 0.903383,
+  "converged": true,
+  "normal_termination": true,
+  "charge": 0,
+  "multiplicity": 1,
+  "cutoff_ry": 600,
+  "rel_cutoff_ry": 50,
+  "ngrids": 5,
+  "periodicity": "NONE",
+  "cell_angstrom": "30 x 30 x 40",
+  "dispersion_geometry": "DFTD3 zero damping with C9 enabled",
+  "dispersion_final_energy": "PBE-D3(BJ) with C9 disabled",
+  "source_sha256": {
+    "accepted_input": "2a329d64b3bc354c237ddf4fc01c5a509fdf325fcbe291f22443d5a37ec54781",
+    "accepted_coordinate": "4d37dc1d8b09af36a021571b636bd5c25a72821b97f8fec64172a13e5d814428",
+    "unpublished_full_output": "d574a5ecd32fd6693d95493c941630d028005a44b1b376e08130b89b1ec4fe9d"
+  },
+  "public_file_sha256": {
+    "final_energy_input.inp": "a930ffccaf4dd17015536a0757208de89d2bec4481271ebaf6d5a8b7e2a816a1",
+    "endpoint.xyz": "e1f7751c7d7ac5513e0248e14ba6ef22e610e933ec84d598f6f86dff72bf38fd",
+    "final_energy_output_excerpt.txt": "32dbfffdc412aad29ce4c8e80cfe57ba89877da77aaef02814c1cf1d34d9f930"
+  },
+  "dissertation_mapping": "Chapter 4, Figure 4.4",
+  "comparison_scope": "weak-contact comparator"
+}
