@@ -1,0 +1,11 @@
+version: ch5_dataset_v1
+output_root: outputs/ch5_ml_tem
+patch_size: 512
+stride: 256
+rotations: [0, 90, 180, 270]
+class_label: Pt_NPs
+class_id: 0
+include_empty: true
+ignore_region_labels: [ignore_region]
+exclude_ignore_region_patches: true
+train_transforms: {}

@@ -1,0 +1,4 @@
+image_id,image_path,label_path
+sample_001,path/to/images/sample_001.png,path/to/labels/sample_001.json
+sample_002,path/to/images/sample_002.png,path/to/labels/sample_002.json
+sample_003,path/to/images/sample_003.png,path/to/labels/sample_003.json

@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pt-tem-cv"
+version = "1.0.0"
+description = "Sliding-window TEM object-detection utilities accompanying Chapter 5 of a dissertation"
+readme = "README.md"
+authors = [{name = "Gan Xu"}]
+license = {file = "LICENSE"}
+requires-python = ">=3.10"
+dependencies = [
+  "matplotlib>=3.7",
+  "numpy>=1.24",
+  "Pillow>=9.5",
+  "PyYAML>=6.0",
+]
+
+[project.optional-dependencies]
+ml = ["ultralytics>=8.3"]
+dev = ["pytest>=8"]
+
+[project.urls]
+Repository = "https://github.com/iserlohn0522-cell/oxide-modified-pt-catalyst-dissertation-support"
+
+[project.scripts]
+pt-tem-build-dataset = "pt_tem_cv.cli:build_dataset_main"
+pt-tem-evaluate = "pt_tem_cv.cli:evaluate_main"
+pt-tem-train = "pt_tem_cv.cli:train_main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

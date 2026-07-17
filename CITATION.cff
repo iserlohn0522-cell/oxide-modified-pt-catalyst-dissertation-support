@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use the code, cite this versioned repository release; cite the dissertation for scientific results and interpretations."
+title: "Oxide-Modified Pt Catalyst Dissertation Support"
+version: "1.0.0"
+date-released: 2026-07-17
+authors:
+  - family-names: "Xu"
+    given-names: "Gan"
+repository-code: "https://github.com/iserlohn0522-cell/oxide-modified-pt-catalyst-dissertation-support"
+url: "https://github.com/iserlohn0522-cell/oxide-modified-pt-catalyst-dissertation-support"
+abstract: "Lightweight support package for Chapter 5 detector training and evaluation code and selected Chapter 4 DFT plotting and provenance files accompanying a 2026 University of Missouri-Columbia doctoral dissertation. Raw microscopy, annotations, model weights, complete calculation archives, and dissertation submission files are not included."
+keywords:
+  - PEMFC
+  - platinum catalyst
+  - transmission electron microscopy
+  - computer vision
+  - density functional theory

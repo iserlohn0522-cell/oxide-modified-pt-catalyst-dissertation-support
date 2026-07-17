@@ -1,0 +1,18 @@
+version: image_augmentation_doe_v1
+random_seed: 20260327
+families:
+  yolov8: yolov8n.pt
+  yolo11: yolo11n.pt
+factor_levels:
+  contrast_amplitude:
+    low: 0.10
+    center: 0.20
+    high: 0.30
+  sharpness_amplitude:
+    low: 0.30
+    center: 0.65
+    high: 1.00
+  remap_tail_clip:
+    low: 0.50
+    center: 1.00
+    high: 2.00

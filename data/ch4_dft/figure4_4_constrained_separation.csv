@@ -1,0 +1,4 @@
+endpoint_label,delta_e_sep_2A_eV,method_family,evidence_role,note
+Nb-WP,0.903383,"fixed-geometry PBE-D3(BJ), C9 off",weak-contact comparator,Selected Nb weak-contact retained/displaced pair.
+Zr-JC*,1.360508,"fixed-geometry PBE-D3(BJ), C9 off",displaced-basin sensitivity check,Second lower-energy displaced basin from the same Zr-JC retained endpoint and Pt6 displacement.
+Zr-JC,2.946157,"fixed-geometry PBE-D3(BJ), C9 off",primary selected endpoint,Primary displaced basin from the selected Zr junction-contact retained endpoint.

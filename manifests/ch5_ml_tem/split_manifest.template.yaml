@@ -1,0 +1,6 @@
+version: user_defined_splits_v1
+folds:
+  fold_1:
+    train: [sample_001]
+    val: [sample_002]
+    test: [sample_003]

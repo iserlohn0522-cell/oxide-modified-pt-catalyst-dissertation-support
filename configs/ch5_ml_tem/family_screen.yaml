@@ -1,0 +1,6 @@
+version: detector_family_screen_v1
+families:
+  yolov8: yolov8n.pt
+  yolo11: yolo11n.pt
+  yolo26: yolo26n.pt
+  rtdetr: rtdetr-l.pt

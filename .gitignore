@@ -1,0 +1,84 @@
+# Python and local environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+*.egg-info/
+build/
+dist/
+
+# Operating-system and editor files
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+~$*
+
+# User-supplied research data and annotations
+data/private_or_user_supplied/
+raw/
+raw_data/
+private_data/
+annotations/
+labelme_json/
+*.dm3
+*.dm4
+*.ser
+*.mrc
+*.emd
+*.emi
+*.tif
+*.tiff
+*.nd2
+*.czi
+
+# Model weights and generated ML outputs
+*.pt
+*.pth
+*.onnx
+*.ckpt
+*.engine
+outputs/
+results/
+experiments/
+runs/
+wandb/
+*.jsonl
+*_particles.json
+patch_predictions.json
+prompts.jsonl
+
+# DFT and cluster outputs
+WAVECAR
+CHGCAR
+vasprun.xml
+OUTCAR
+*.cube
+*.wfn
+*.chk
+*.fchk
+scratch/
+cluster_logs/
+slurm-*.out
+
+# Archives and private writing files
+*.zip
+*.7z
+*.tar
+*.tar.gz
+*.rar
+*.doc
+*.docx
+*.pdf
+private_review/
+submission_only/
+
+# Local secrets and credentials
+.env
+.env.*
+*.pem
+*.key
+credentials*.json

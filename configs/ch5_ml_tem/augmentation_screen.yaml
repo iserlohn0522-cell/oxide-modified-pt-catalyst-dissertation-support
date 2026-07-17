@@ -1,0 +1,27 @@
+version: image_augmentation_screen_v1
+families:
+  yolov8: yolov8n.pt
+  yolo11: yolo11n.pt
+augment_packs:
+  baseline:
+    flip: true
+  contrast:
+    flip: true
+    contrast: true
+  grayscale:
+    flip: true
+    grayscale: true
+  intensity_remap:
+    flip: true
+    intensity_remap: true
+  sharpness:
+    flip: true
+    sharpness: true
+  contrast_and_remap:
+    flip: true
+    contrast: true
+    intensity_remap: true
+  grayscale_and_sharpness:
+    flip: true
+    grayscale: true
+    sharpness: true
