@@ -21,9 +21,9 @@
     "unpublished_full_output": "2140cb342771d0a075b8e5aa1ef1058007251a08c3842544f9a0f81da4c3a333"
   },
   "public_file_sha256": {
-    "final_energy_input.inp": "d398124e3f7536c991f2c8297ddaf9d67560fe63a05a4e91180a824786cdb927",
-    "endpoint.xyz": "61fd9a2c2034957aafc3112899175cd19a835b21059b2e2b7c06801b800b298c",
-    "final_energy_output_excerpt.txt": "f8841d0cf1325f0507ccb6e75525c58bb1a6fe63a589ebc36cb3a289cd7c5d99"
+    "final_energy_input.inp": "8f2e3aae9a957f6c94bc6b15741fae24c1a039abb7a857a0f0446849f8e28ade",
+    "endpoint.xyz": "1ddeac7e82325b1afd7c99d1825c687f8eb1c99a1181fffe78c96545fd20c037",
+    "final_energy_output_excerpt.txt": "6b7f905c8316a89a2e384657bcb11880f83811762f420db93bffa1b2162caf81"
   },
   "dissertation_mapping": "Chapter 4, Figure 4.4",
   "comparison_scope": "primary selected junction-contact endpoint"

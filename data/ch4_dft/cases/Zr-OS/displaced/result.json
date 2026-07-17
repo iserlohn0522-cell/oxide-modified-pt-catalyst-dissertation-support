@@ -21,9 +21,9 @@
     "unpublished_full_output": "df1442060e3c695a75b5c4ebb582494f5ed93fb20d27de62cb6772292a47a771"
   },
   "public_file_sha256": {
-    "final_energy_input.inp": "17346e44daf3da80b6e2f5158a064e3a72eba16e6bec4ffcd229364894fa263c",
-    "endpoint.xyz": "8f5eca232f82fe43076791029144068da61300e657ebd6e2b98bea6c51f1c6f0",
-    "final_energy_output_excerpt.txt": "bc0264a1e2453f1df945866ef7250ca93ce934281a246f708c8a5b26026cab6c"
+    "final_energy_input.inp": "68bf684aabd2746ebcd9a0000a5aa8a4ae64c1ddcdf0989342982b09e0f7258d",
+    "endpoint.xyz": "f439d150a6ec96c51fd2aa72543ef37193017399bf45390958fb9ab16a5ab0fb",
+    "final_energy_output_excerpt.txt": "cd3320c9245b3a49fda201cb188a129c40aab02e2e1a57a00562b0900c73d3a4"
   },
   "dissertation_mapping": "Chapter 4 matched-control analysis",
   "comparison_scope": "lineage-consistent control compared only within the M2 control protocol"

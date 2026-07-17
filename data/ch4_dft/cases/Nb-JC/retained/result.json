@@ -21,9 +21,9 @@
     "unpublished_full_output": "71a4b1c50993274a99302edb7eff00c1fe864212ca27754d135b87a25a06eaa4"
   },
   "public_file_sha256": {
-    "final_energy_input.inp": "4b7461b7359ad0665d6563983b4379bfec3555312d95658ceaca7c845d25f982",
-    "endpoint.xyz": "7841326e29766e216e5f3555c5bf21f6489007d85d388a2e9c171cfceaaa36e1",
-    "final_energy_output_excerpt.txt": "96ef8853793ca4800fa0e331b705e5dccd5743c099885132852075d48bc6ee0a"
+    "final_energy_input.inp": "d8eacc495e07732d18a7c3730fd0c117b4351917c60c06bb3b78fdf10afbf388",
+    "endpoint.xyz": "8a4e321fb8bc950ef943e1e30da420a9956cedcdad3d676d3c70a4cca8c24888",
+    "final_energy_output_excerpt.txt": "38e86373c416f155c8c38e9b223cf2bacc5854acb7565db70ef686bd9b4e30ff"
   },
   "dissertation_mapping": "Chapter 4 matched-control analysis",
   "comparison_scope": "lineage-consistent recontact control compared only within the M2 control protocol"

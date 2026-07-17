@@ -21,9 +21,9 @@
     "unpublished_full_output": "755d79943ddca9f9b8d3ef21b1692fe61505d5f4294907440d704850c5fdc8a8"
   },
   "public_file_sha256": {
-    "final_energy_input.inp": "4258e2f11fe4691a92a202c192d8476363db4a1a5d9cd4db1123dfd69da69f3d",
-    "endpoint.xyz": "d70f7766f1f37c717a7c9e22ff668dc7abbc04722fb24026d8f13b9c0e1e1265",
-    "final_energy_output_excerpt.txt": "d07deea7db26f6b81a63c62e80be60a5e1870ef12067af17f62fd5c6e071583d"
+    "final_energy_input.inp": "13544c8e5fc209eb8f3296443de033d0a38d67955f8d7c1d2a34d7abd0e5958d",
+    "endpoint.xyz": "f9013de2648ee33ad0957883443813bf3b40a3b9e81e862e100e4677fbcd8821",
+    "final_energy_output_excerpt.txt": "0e4ab2cd3e34d66b6e45cab683d9e8ed7a4250bd8afb61e99f16ce79b0399f24"
   },
   "dissertation_mapping": "Chapter 4, Figure 4.4",
   "comparison_scope": "alternate displaced support basin from the same retained endpoint and displacement"

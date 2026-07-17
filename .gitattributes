@@ -4,8 +4,12 @@
 LICENSE text eol=lf
 *.cff text eol=lf
 *.csv text eol=lf
+*.inp text eol=lf
+*.json text eol=lf
 *.md text eol=lf
 *.py text eol=lf
+*.txt text eol=lf
 *.toml text eol=lf
+*.xyz text eol=lf
 *.yaml text eol=lf
 *.yml text eol=lf

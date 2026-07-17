@@ -83,7 +83,7 @@ def main() -> None:
     parser.add_argument("--destination", type=Path, required=True)
     args = parser.parse_args()
     args.destination.parent.mkdir(parents=True, exist_ok=True)
-    args.destination.write_text(build_excerpt(args.input, args.output), encoding="utf-8")
+    args.destination.write_bytes(build_excerpt(args.input, args.output).encode("utf-8"))
     print(args.destination)
 
 

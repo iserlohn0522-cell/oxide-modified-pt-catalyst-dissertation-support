@@ -21,9 +21,9 @@
     "unpublished_full_output": "d574a5ecd32fd6693d95493c941630d028005a44b1b376e08130b89b1ec4fe9d"
   },
   "public_file_sha256": {
-    "final_energy_input.inp": "a930ffccaf4dd17015536a0757208de89d2bec4481271ebaf6d5a8b7e2a816a1",
-    "endpoint.xyz": "e1f7751c7d7ac5513e0248e14ba6ef22e610e933ec84d598f6f86dff72bf38fd",
-    "final_energy_output_excerpt.txt": "32dbfffdc412aad29ce4c8e80cfe57ba89877da77aaef02814c1cf1d34d9f930"
+    "final_energy_input.inp": "426c681823520950aa74309178bc643d5af628956338c52ede33deb3e59177ea",
+    "endpoint.xyz": "6422a598f676ca8f931d437ab87be6864204341a2de384df64acb314dae7355f",
+    "final_energy_output_excerpt.txt": "007725ef8d76bdd3f32662d82742a63ab09e05822bee978697fc0e053640dd78"
   },
   "dissertation_mapping": "Chapter 4, Figure 4.4",
   "comparison_scope": "weak-contact comparator"
